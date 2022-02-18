@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "parcel": "^2.3.1",
+    "sass": "^1.49.8",
+    "dev": "parcel ./src/index.html --no-source-maps --open"
+  }
+}

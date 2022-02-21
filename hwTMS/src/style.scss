@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('./fonts/OpenSans/OpenSans-Regular.eot');
+    src: url('./fonts/OpenSans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/OpenSans/OpenSans-Regular.svg#OpenSans-Regular') format('svg'),
+         url('./fonts/OpenSans/OpenSans-Regular.ttf') format('truetype'),
+         url('./fonts/OpenSans/OpenSans-Regular.woff') format('woff'),
+         url('./fonts/OpenSans/OpenSans-Regular.woff2') format('woff2');
+    font-style: normal;
+  }
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url('./fonts/Raleway/Raleway-Regular.eot');
+  src: url('./fonts/Raleway/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/Raleway/Raleway-Regular.svg#Raleway-Regular') format('svg'),
+       url('./fonts/Raleway/Raleway-Regular.ttf') format('truetype'),
+       url('./fonts/Raleway/Raleway-Regular.woff') format('woff'),
+       url('./fonts/Raleway/Raleway-Regular.woff2') format('woff2');
+  font-style: normal;
+}

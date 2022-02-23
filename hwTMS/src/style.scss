@@ -221,6 +221,8 @@ $lightblue: #E2E2E2;
     font-size: 14px;
     line-height: 19px;
     color: $lightgrey;
+    margin-top:15px;
+    margin-bottom:15px;
   }
 }
   .main-form__button {
@@ -229,7 +231,7 @@ $lightblue: #E2E2E2;
     font-family: 'OpenSans';
     font-weight: 600;
     font-size: 18px;
-    padding: 25px;
+    padding: 15px 25px;
     background-color: $pink;
     border: 1px solid $pink;
     border-radius: 0px 0px 10px 10px;

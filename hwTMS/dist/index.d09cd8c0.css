@@ -7003,6 +7003,8 @@ readers do not read off random characters that represent icons */
   font-size: 14px;
   line-height: 19px;
   color: #BDBDBD;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .main-form .main-form__button {
   width: 100%;
@@ -7010,7 +7012,7 @@ readers do not read off random characters that represent icons */
   font-family: "OpenSans";
   font-weight: 600;
   font-size: 18px;
-  padding: 25px;
+  padding: 15px 25px;
   background-color: #EC7979;
   border: 1px solid #EC7979;
   border-radius: 0px 0px 10px 10px;

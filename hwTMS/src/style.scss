@@ -265,6 +265,7 @@ $tabscolor: #C6CBCD;
     background-color: $pink;
     border: 1px solid $pink;
     border-radius: 0px 0px 10px 10px;
+    cursor: pointer;
   }
 }
 .social {
@@ -274,7 +275,7 @@ $tabscolor: #C6CBCD;
     padding: 0px 50px;
   }
   .social-container {
-   flex: 1 1 45.333%;
+   flex: 1 1 43%;
    padding: 10px 0px;
     .social-container__text {
       font-family: 'OpenSans';
@@ -293,13 +294,14 @@ $tabscolor: #C6CBCD;
     }
   }
   .social__icons {
-    flex: 1 1 54.666%;
+    flex: 1 1 57%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
+    padding: 0px 10px;
+    //flex-wrap: wrap;
     & i {
-      font-size: 56px;
+      font-size: 48px;
       color: $iconcolor;
     }
   }
@@ -370,6 +372,7 @@ $tabscolor: #C6CBCD;
           padding: 15px 100px;
           margin: 15px 0;
           color: $white;
+          cursor: pointer;
         }
       }
       .tabs-container__img {
@@ -648,39 +651,76 @@ $tabscolor: #C6CBCD;
       .contact-block {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        & input {
-          flex: 1 1 55%;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        .contact-block__input {
+          display: flex;
+          flex-direction: column;
+          flex: 1 1 51%;
+          & input {
+            outline: none;
+            border:none;
+            padding:20px 0px;
+            border-bottom: 1px solid $lightgrey;
+            font-family: 'OpenSans';
+            font-weight: 400;
+            font-size: 14px;
+            width: 95%;
+            height: 100%;
+            color: $lightgrey;
+          }
+        }
+        .block-textarea {
+          flex: 1 1 49%;
           outline: none;
-          border:none;
+          border: none;
           padding:19px 0px;
+          resize: none;
           border-bottom: 1px solid $lightgrey;
           font-family: 'OpenSans';
           font-weight: 400;
-          font-size: 14px;
           width: 100%;
           height: 100%;
           color: $lightgrey;
-          margin: 0px 50px;
         }
       }
-      .contact-textarea {
-        outline: none;
-        border: none;
-        padding:19px 0px;
-        resize: none;
-        border-bottom: 1px solid $lightgrey;
-        font-family: 'OpenSans';
-        font-weight: 400;
-        width: 100%;
-        height: 100%;
-        color: $lightgrey;
-      }
       .contact-button {
-        text-align: center;
         padding: 15px 100px;
+        display: block;
         margin: 0 auto;
+        font-family: 'OpenSans';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: $white;
+        background: $pink;
+        border: 2px solid $pink;
+        cursor: pointer;
       }
     }
   }
-}     
+}
+.footer {
+  width: 100%;
+  background: $black;
+  .block-container {
+    display: block;
+    .footer__icons {
+      text-align: center;
+      margin: 25px 0px 35px 0px;
+      & i {
+        color: $iconcolor;
+        font-size: 48px;
+        margin: 0px 10px;
+      }
+    }
+    .footer__copyright {
+      font-family: 'Raleway';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: rgba(255, 255, 255, 0.5);
+      text-align: center;
+    }
+  }
+} 

@@ -7043,6 +7043,7 @@ readers do not read off random characters that represent icons */
   background-color: #EC7979;
   border: 1px solid #EC7979;
   border-radius: 0px 0px 10px 10px;
+  cursor: pointer;
 }
 .social {
   background: #F8EFEF;
@@ -7052,7 +7053,7 @@ readers do not read off random characters that represent icons */
   padding: 0px 50px;
 }
 .social .social-container {
-  flex: 1 1 45.333%;
+  flex: 1 1 43%;
   padding: 10px 0px;
 }
 .social .social-container .social-container__text {
@@ -7071,14 +7072,14 @@ readers do not read off random characters that represent icons */
   color: #86878B;
 }
 .social .social__icons {
-  flex: 1 1 54.666%;
+  flex: 1 1 57%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
+  padding: 0px 10px;
 }
 .social .social__icons i {
-  font-size: 56px;
+  font-size: 48px;
   color: #CCCCCC;
 }
 .tabs {
@@ -7150,6 +7151,7 @@ readers do not read off random characters that represent icons */
   padding: 15px 100px;
   margin: 15px 0;
   color: #FFFFFF;
+  cursor: pointer;
 }
 .tabs .block-container .tabs-container .tabs-container__img {
   flex: 1 1 25%;
@@ -7400,23 +7402,28 @@ readers do not read off random characters that represent icons */
 .contact .block-container .contact__container .contact-block {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
-.contact .block-container .contact__container .contact-block input {
-  flex: 1 1 55%;
+.contact .block-container .contact__container .contact-block .contact-block__input {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 51%;
+}
+.contact .block-container .contact__container .contact-block .contact-block__input input {
   outline: none;
   border: none;
-  padding: 19px 0px;
+  padding: 20px 0px;
   border-bottom: 1px solid #BDBDBD;
   font-family: "OpenSans";
   font-weight: 400;
   font-size: 14px;
-  width: 100%;
+  width: 95%;
   height: 100%;
   color: #BDBDBD;
-  margin: 0px 50px;
 }
-.contact .block-container .contact__container .contact-textarea {
+.contact .block-container .contact__container .contact-block .block-textarea {
+  flex: 1 1 49%;
   outline: none;
   border: none;
   padding: 19px 0px;
@@ -7429,7 +7436,39 @@ readers do not read off random characters that represent icons */
   color: #BDBDBD;
 }
 .contact .block-container .contact__container .contact-button {
-  text-align: center;
   padding: 15px 100px;
+  display: block;
   margin: 0 auto;
+  font-family: "OpenSans";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  background: #EC7979;
+  border: 2px solid #EC7979;
+  cursor: pointer;
+}
+.footer {
+  width: 100%;
+  background: #000000;
+}
+.footer .block-container {
+  display: block;
+}
+.footer .block-container .footer__icons {
+  text-align: center;
+  margin: 25px 0px 35px 0px;
+}
+.footer .block-container .footer__icons i {
+  color: #CCCCCC;
+  font-size: 48px;
+  margin: 0px 10px;
+}
+.footer .block-container .footer__copyright {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
 }

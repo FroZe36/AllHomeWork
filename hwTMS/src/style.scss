@@ -292,7 +292,7 @@ $tabscolor: #C6CBCD;
       color: $grey;
     }
   }
-  .social-icons {
+  .social__icons {
     flex: 1 1 54.666%;
     display: flex;
     align-items: center;
@@ -395,13 +395,13 @@ $tabscolor: #C6CBCD;
       grid-gap: 30px;
       align-items: center;
       justify-items: center;
-      .about__container__block {
+      .about-block {
         width: 100%;
-        .about-icon {
+        .about-block__icon {
           text-align: center;
           margin: 50px 0px;
         }
-        .about-text {
+        .about-block__text {
           font-family: 'OpenSans';
           font-weight: 700;
           font-size: 24px;
@@ -410,7 +410,7 @@ $tabscolor: #C6CBCD;
           text-align: center;
           color: $black;
         }
-        .about-subtext {
+        .about-block__subtext {
           font-family: 'Raleway';
           font-weight: 400;
           font-size: 18px;
@@ -509,11 +509,11 @@ $tabscolor: #C6CBCD;
     }
     .reviews__container {
       display: flex;
-      .reviews__container__block {
+      .reviews-block {
         flex: 1 1 33.333%;
         margin: 50px 0px;
         width: 100%;
-        .reviews-text {
+        .reviews-block__text {
           background: $lightblue;
           border-radius: 10px;
           padding: 50px 20px;
@@ -536,14 +536,14 @@ $tabscolor: #C6CBCD;
             position: absolute;
           }
         }
-        .reviews-description {
+        .reviews-block__description {
           display: flex;
           flex-direction: row;
           width: 100%;
-          .reviews-description__container {
+          .description-container {
             margin: 20px;
           }
-          .description-name {
+          .description-container__name {
             margin-bottom: 15px;
             font-family: 'OpenSans';
             font-weight: 700;
@@ -552,7 +552,7 @@ $tabscolor: #C6CBCD;
             color: $black;
             text-transform: capitalize;
           }
-          .description-class {
+          .description-container__class {
             font-family: 'Raleway';
             font-weight: 400;
             font-size: 18px;
@@ -645,7 +645,7 @@ $tabscolor: #C6CBCD;
     }
     .contact__container {
       width: 100%;
-      .contact__container__block {
+      .contact-block {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -664,12 +664,7 @@ $tabscolor: #C6CBCD;
           margin: 0px 50px;
         }
       }
-      .textarea-right {
-        display: flex;
-        align-items:stretch;
-        flex: 1 1 45% ;
-        display: block;
-        float: right;
+      .contact-textarea {
         outline: none;
         border: none;
         padding:19px 0px;
@@ -681,7 +676,7 @@ $tabscolor: #C6CBCD;
         height: 100%;
         color: $lightgrey;
       }
-      .contact__container__button {
+      .contact-button {
         text-align: center;
         padding: 15px 100px;
         margin: 0 auto;

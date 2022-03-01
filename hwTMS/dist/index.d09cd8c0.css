@@ -7070,14 +7070,14 @@ readers do not read off random characters that represent icons */
   line-height: 21px;
   color: #86878B;
 }
-.social .social-icons {
+.social .social__icons {
   flex: 1 1 54.666%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.social .social-icons i {
+.social .social__icons i {
   font-size: 56px;
   color: #CCCCCC;
 }
@@ -7166,14 +7166,14 @@ readers do not read off random characters that represent icons */
   align-items: center;
   justify-items: center;
 }
-.about .block-container .about__container .about__container__block {
+.about .block-container .about__container .about-block {
   width: 100%;
 }
-.about .block-container .about__container .about__container__block .about-icon {
+.about .block-container .about__container .about-block .about-block__icon {
   text-align: center;
   margin: 50px 0px;
 }
-.about .block-container .about__container .about__container__block .about-text {
+.about .block-container .about__container .about-block .about-block__text {
   font-family: "OpenSans";
   font-weight: 700;
   font-size: 24px;
@@ -7182,7 +7182,7 @@ readers do not read off random characters that represent icons */
   text-align: center;
   color: #000000;
 }
-.about .block-container .about__container .about__container__block .about-subtext {
+.about .block-container .about__container .about-block .about-block__subtext {
   font-family: "Raleway";
   font-weight: 400;
   font-size: 18px;
@@ -7268,12 +7268,12 @@ readers do not read off random characters that represent icons */
 .reviews .block-container .reviews__container {
   display: flex;
 }
-.reviews .block-container .reviews__container .reviews__container__block {
+.reviews .block-container .reviews__container .reviews-block {
   flex: 1 1 33.333%;
   margin: 50px 0px;
   width: 100%;
 }
-.reviews .block-container .reviews__container .reviews__container__block .reviews-text {
+.reviews .block-container .reviews__container .reviews-block .reviews-block__text {
   background: #E2E2E2;
   border-radius: 10px;
   padding: 50px 20px;
@@ -7286,7 +7286,7 @@ readers do not read off random characters that represent icons */
   color: #86878B;
   position: relative;
 }
-.reviews .block-container .reviews__container .reviews__container__block .reviews-text::after {
+.reviews .block-container .reviews__container .reviews-block .reviews-block__text::after {
   content: "";
   background: url("Polygon1.4132a0b9.svg");
   width: 30px;
@@ -7296,15 +7296,15 @@ readers do not read off random characters that represent icons */
   z-index: 9;
   position: absolute;
 }
-.reviews .block-container .reviews__container .reviews__container__block .reviews-description {
+.reviews .block-container .reviews__container .reviews-block .reviews-block__description {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-.reviews .block-container .reviews__container .reviews__container__block .reviews-description .reviews-description__container {
+.reviews .block-container .reviews__container .reviews-block .reviews-block__description .description-container {
   margin: 20px;
 }
-.reviews .block-container .reviews__container .reviews__container__block .reviews-description .description-name {
+.reviews .block-container .reviews__container .reviews-block .reviews-block__description .description-container__name {
   margin-bottom: 15px;
   font-family: "OpenSans";
   font-weight: 700;
@@ -7313,7 +7313,7 @@ readers do not read off random characters that represent icons */
   color: #000000;
   text-transform: capitalize;
 }
-.reviews .block-container .reviews__container .reviews__container__block .reviews-description .description-class {
+.reviews .block-container .reviews__container .reviews-block .reviews-block__description .description-container__class {
   font-family: "Raleway";
   font-weight: 400;
   font-size: 18px;
@@ -7397,12 +7397,12 @@ readers do not read off random characters that represent icons */
 .contact .block-container .contact__container {
   width: 100%;
 }
-.contact .block-container .contact__container .contact__container__block {
+.contact .block-container .contact__container .contact-block {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.contact .block-container .contact__container .contact__container__block input {
+.contact .block-container .contact__container .contact-block input {
   flex: 1 1 55%;
   outline: none;
   border: none;
@@ -7416,12 +7416,7 @@ readers do not read off random characters that represent icons */
   color: #BDBDBD;
   margin: 0px 50px;
 }
-.contact .block-container .contact__container .textarea-right {
-  display: flex;
-  align-items: stretch;
-  flex: 1 1 45%;
-  display: block;
-  float: right;
+.contact .block-container .contact__container .contact-textarea {
   outline: none;
   border: none;
   padding: 19px 0px;
@@ -7433,7 +7428,7 @@ readers do not read off random characters that represent icons */
   height: 100%;
   color: #BDBDBD;
 }
-.contact .block-container .contact__container .contact__container__button {
+.contact .block-container .contact__container .contact-button {
   text-align: center;
   padding: 15px 100px;
   margin: 0 auto;

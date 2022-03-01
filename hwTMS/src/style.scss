@@ -127,6 +127,7 @@ $tabscolor: #C6CBCD;
 }
 .header {
   background-color: $black;
+  width: 100%;
   .header__logo {
     margin-left: 25px;
   }
@@ -275,7 +276,7 @@ $tabscolor: #C6CBCD;
     padding: 0px 50px;
   }
   .social-container {
-   flex: 1 1 43%;
+   flex: 1 1 44%;
    padding: 10px 0px;
     .social-container__text {
       font-family: 'OpenSans';
@@ -294,11 +295,11 @@ $tabscolor: #C6CBCD;
     }
   }
   .social__icons {
-    flex: 1 1 57%;
+    flex: 1 1 56%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0px 10px;
+    padding: 0px 15px;
     //flex-wrap: wrap;
     & i {
       font-size: 48px;
@@ -343,9 +344,8 @@ $tabscolor: #C6CBCD;
       display: flex;
       border: 1px solid $tabscolor;
       .tabs-container__block {
-        flex: 1 1 75%;
+        flex: 1 1 71%;
         padding: 50px 10px 0px 70px;
-        margin-right: 25px;
         .tabs-container__block__title {
           font-family: 'OpenSans';
           font-weight: 700;
@@ -376,12 +376,15 @@ $tabscolor: #C6CBCD;
         }
       }
       .tabs-container__img {
-      flex: 1 1 25%;
+        background: url(./img/tabspicture.svg);
+        flex: 1 1 49%;
+        background-size: cover;
       }
     }
   }
 }
 .about {
+  width: 100%;
   .block-container {
     padding: 60px 60px;
     display: block;
@@ -427,6 +430,7 @@ $tabscolor: #C6CBCD;
   }
 }
 .price {
+  width: 100%;
   background-color: $mediumgrey;
   .block-container{
     padding:70px 70px;

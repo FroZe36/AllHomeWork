@@ -6904,6 +6904,7 @@ readers do not read off random characters that represent icons */
 }
 .header {
   background-color: #000000;
+  width: 100%;
 }
 .header .header__logo {
   margin-left: 25px;
@@ -7053,7 +7054,7 @@ readers do not read off random characters that represent icons */
   padding: 0px 50px;
 }
 .social .social-container {
-  flex: 1 1 43%;
+  flex: 1 1 44%;
   padding: 10px 0px;
 }
 .social .social-container .social-container__text {
@@ -7072,11 +7073,11 @@ readers do not read off random characters that represent icons */
   color: #86878B;
 }
 .social .social__icons {
-  flex: 1 1 57%;
+  flex: 1 1 56%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 0px 10px;
+  padding: 0px 15px;
 }
 .social .social__icons i {
   font-size: 48px;
@@ -7121,9 +7122,8 @@ readers do not read off random characters that represent icons */
   border: 1px solid #C6CBCD;
 }
 .tabs .block-container .tabs-container .tabs-container__block {
-  flex: 1 1 75%;
+  flex: 1 1 71%;
   padding: 50px 10px 0px 70px;
-  margin-right: 25px;
 }
 .tabs .block-container .tabs-container .tabs-container__block .tabs-container__block__title {
   font-family: "OpenSans";
@@ -7154,7 +7154,12 @@ readers do not read off random characters that represent icons */
   cursor: pointer;
 }
 .tabs .block-container .tabs-container .tabs-container__img {
-  flex: 1 1 25%;
+  background: url("tabspicture.193a7a36.svg");
+  flex: 1 1 49%;
+  background-size: cover;
+}
+.about {
+  width: 100%;
 }
 .about .block-container {
   padding: 60px 60px;
@@ -7194,6 +7199,7 @@ readers do not read off random characters that represent icons */
   margin: 50px 0px;
 }
 .price {
+  width: 100%;
   background-color: #F5F5F5;
 }
 .price .block-container {

@@ -104,3 +104,32 @@ let age = prompt('Как вас зовут?Сколько вам лет?');
 console.log(age);
 
 */
+
+//Advansed level, TASK 1
+
+/*
+
+let a = 4;
+let b = 3;
+
+
+console.log(a-1);
+console.log(b+1);
+
+*/
+
+//TASK 2
+
+/*
+
+let codeWord1 = "обернись";
+let codeWord2 = "неужели";
+let codeWord3 = "огурцы";
+let codeWord4 = "липкие";
+let codeWord5 = "?!";
+
+let cipher = codeWord1[1] + codeWord2[1] + codeWord3[1] + codeWord4[1] + codeWord5[1];
+
+console.log(cipher);
+
+*/

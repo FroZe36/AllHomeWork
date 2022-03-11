@@ -4,16 +4,13 @@
 var admin;
 let userName;
 
-userName='Джон';
-admin=userName;
+userName = 'Джон';
+admin = userName;
 
 console.log(admin);
 
 alert(admin)
-
 ourPlanet="Наша Планета"
-
-currentUserOfWebsite
 
 */
 
@@ -23,31 +20,23 @@ currentUserOfWebsite
 let x = 20;
 let y = 58;
 let z = 42;
-let plusResult = x + y + z
+let result = x + y + z;
 
-console.log(plusResult)
+console.log(result);
 
 */
 
 //TASK 2
 
 /*
-let a = 1;
+const SECONDS_IN_MINUTE = 60;
+const MINUTES_IN_HOUR = 60;
+const HOURS_IN_DAY = 24;
+const DAYS_IN_YEAR = 365;
 
-let minute = a * 60;
-let hours = minute * 60;
-let day = hours * 24;
-let year = day * 365;
+const myAgeInSeconds = 27 * SECONDS_IN_MINUTE * MINUTES_IN_HOUR * HOURS_IN_DAY * DAYS_IN_YEAR;
 
-console.log(a);
-console.log(minute);
-console.log(hours);
-console.log(day);
-console.log(year);
-
-let myAgeInSecond = (27 * year);
-
-console.log(myAgeInSecond);
+console.log(myAgeInSeconds);
 
 */
 
@@ -97,18 +86,12 @@ console.log(a.length + b.length + c.length + d.length + e.length);
 
 /*
 let a = String('`Variable: %variable name% have type: %type variable%`');
-let b = Number('`Variable: %variable name% have type: %type variable%`');
+let b = Number(10);
 let c = Symbol('`Variable: %variable name% have type: %type variable%`');
 
-const d = '`Variable: %variable name% have type: %type variable%`';
-
-a = d;
-b = d;
-c = d;
-
-console.log(a);
-console.log(b);
-console.log(c);
+console.log(`Variable: a have type: ${typeof a}`)
+console.log(`Variable: b have type: ${typeof b}`)
+console.log(`Variable: c have type: ${typeof c}`)
 
 */
 

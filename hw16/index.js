@@ -107,16 +107,15 @@ console.log(age);
 
 //Advansed level, TASK 1
 
-/*
+// let a = 4;
+// let b = 3;
 
-let a = 4;
-let b = 3;
+// a = a + b; 
+// b = a - b; 
+// a = a - b; 
 
-
-console.log(a-1);
-console.log(b+1);
-
-*/
+// console.log(a)
+// console.log(b)
 
 //TASK 2
 

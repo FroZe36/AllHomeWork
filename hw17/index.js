@@ -86,3 +86,15 @@
 //     default:
 //         alert('Попробуй испытать счастье заново');
 // }
+
+//Advansed level, TASK 1
+
+
+// let changeString = "Привет, пОлИнА нАбЕрЕжНаЯ";
+// function initCap(str) {
+//    return str.toLowerCase().replace(/(?:^|\s)[а-я]/g, function(m) {
+//       return m.toUpperCase().replace(/\s+ /g, "");
+//    });
+// };
+  
+//   console.log(initCap(changeString));

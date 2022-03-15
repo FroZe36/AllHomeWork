@@ -58,7 +58,7 @@
 //TASK 6
 
 // let age = prompt('Сколько вам лет?')
-// if (age >= 16 && age < 18) {
+// if (age >= 16 && age <= 18) {
 //     alert(`Можешь выкурить сигаретку, только маме не говори`);
 // } else if (age > 18) {
 //     alert('Попей пивка');
@@ -87,7 +87,7 @@
 //         alert('Попробуй испытать счастье заново');
 // }
 
-//Advansed level, TASK 1
+//Advanсed level, TASK 1
 
 
 // let changeString = "Привет, пОлИнА нАбЕрЕжНаЯ";

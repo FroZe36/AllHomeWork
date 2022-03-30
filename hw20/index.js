@@ -22,11 +22,7 @@
 // numbers.shift();
 // numbers.shift();
 
-// numbers.unshift(90);
-// numbers.unshift(23);
-// numbers.unshift(63);
-// numbers.unshift(43);
-// numbers.unshift(5);
+// numbers.unshift(5, 43, 63, 23, 90);
 
 // numbers.pop();
 // numbers.pop();
@@ -34,11 +30,7 @@
 // numbers.pop();
 // numbers.pop();
 
-// numbers.push(5);
-// numbers.push(43);
-// numbers.push(63);
-// numbers.push(23);
-// numbers.push(90);
+// numbers.push(5, 43, 63, 23, 90);
 
 // console.log(numbers);
 

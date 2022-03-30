@@ -68,7 +68,7 @@
 //     sum += salaries[key];
 // };
 
-// const result = sum / 4;
+// const result = sum / Object.keys(salaries).length;
 
 // console.log(result);
 

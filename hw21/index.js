@@ -14,19 +14,13 @@
 
 // const users = ['Darya', 'Masha', 'Denis', 'Vitaliy', 'Polina', 'Anton'];
 
-// const newMembers = users.map(function(value, index, array) {
-//     index += 1;
-//     array = 'member ' + index;
-//     return array +  ": " + value
+// const newMembers = users.map(function(value, index) {
+//     return `member ${index + 1}: ${value}`
 // });
 
 // console.log(newMembers);
 
-// const newMembers = users.map((v, i, a) => {
-//     i += 1
-//     a = 'member ' + i
-//     return a + ": " + v
-// });
+// const newMembers = users.map((v, i) => `member ${i + 1}: ${v}`);
 
 // console.log(newMembers);
 
@@ -65,5 +59,4 @@
 // const firstEvenNumber = numbers.find((v, i) => i = v % 2 == 0);
 
 // console.log(firstEvenNumber);
-
 

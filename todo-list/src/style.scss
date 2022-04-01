@@ -1,0 +1,79 @@
+#root {
+    .container {
+        border: 2px solid black;
+        border-color: black;
+        border-radius: 10px;
+        background-color: rgb(102, 102, 102);
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        .container-wrapper {
+            display: flex;
+            justify-content: space-between;
+            .button {
+                background: #18e7cf;
+                border-radius: 5px;
+                border: 2px solid black;
+                padding: 10px;
+                min-width: 100px;
+            }
+            .container-input {
+                border-radius: 5px;
+                border: 2px solid black;
+                padding: 10px;
+                outline: none;
+                width: 35%;
+                text-align: center;
+            }
+        }
+        .todo-item {
+            display: flex;
+            justify-content: space-around;
+            padding: 5px;
+            border: 2px solid black;
+            border-radius: 10px;
+            max-width: 100%;
+            margin-top: 20px;
+            align-items: center;
+            .todo-item__button-check {
+                background: #18e7cf;
+                border-radius: 5px;
+                border: 2px solid black;
+                font-size: 15px;
+                padding: 0px 10px;
+                margin: 0 auto;
+            }
+            .todo-item__text {
+                border-radius: 5px;
+                border: 2px solid white;
+                background-color: white;
+                padding: 10px;
+                min-width: 65%;
+                text-align: center;
+                margin: 0 auto;
+                font-size: 18px;
+            }
+            .todo-item__area {
+                display: flex;
+                flex-direction: column;
+                min-height: 80px;
+                justify-content: space-between;
+                align-items: flex-end;
+                .area-button {
+                    background: #18e7cf;
+                    border-radius: 5px;
+                    border: 2px solid black;
+                    font-size: 15px;
+                }
+                .area-field {
+                    background: white;
+                    padding: 3px 15px;
+                    border-radius: 5px;
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

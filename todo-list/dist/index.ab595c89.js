@@ -14,47 +14,70 @@ const addTodoButton = document.createElement('button');
 addTodoButton.textContent = 'Add';
 addTodoButton.classList.add("button");
 wrapperRow.append(deleteAllButton, addTodoTextField, addTodoButton);
-function getTodo(text) {
+function getTodo(todoObject, index, todos) {
     const todoElement = document.createElement('div');
-    todoElement.classList.add('todo-item');
-    todoElement.setAttribute('id', `todo-${Math.floor(Math.random() * 1000 + 1)}`);
+    todoElement.classList.add('todo-item', todoObject.isChecked ? 'ready' : true);
+    todoElement.setAttribute('id', `todo-${todoObject.id}`);
     const todoCompleteButton = document.createElement('button');
     todoCompleteButton.classList.add('todo-item__button-check');
-    todoCompleteButton.innerText = " ";
+    todoCompleteButton.innerText = todoObject.isChecked ? "✓" : '';
     todoCompleteButton.addEventListener('click', ()=>{
-        todoCompleteButton.innerText = todoCompleteButton.innerText === '' ? '✓' : '';
+        todoObject.isChecked = !todoObject.isChecked;
+        todoCompleteButton.innerText = todoObject.isChecked ? "✓" : '';
         todoTextElement.classList.toggle('complete');
         todoElement.classList.toggle('ready');
+        saveTodos(todosDB);
     });
     const todoTextElement = document.createElement('div');
-    todoTextElement.classList.add('todo-item__text');
-    todoTextElement.innerHTML = `<span>${text}`;
+    todoTextElement.classList.add('todo-item__text', todoObject.isChecked ? 'complete' : true);
+    todoTextElement.innerHTML = `<span>${todoObject.text}`;
     const todoArea = document.createElement('div');
     todoArea.classList.add('todo-item__area');
     const todoButtonEnd = document.createElement('button');
     todoButtonEnd.classList.add('area-button');
     todoButtonEnd.innerText = "✗";
-    todoButtonEnd.addEventListener('click', ()=>todoElement.remove()
-    );
+    todoButtonEnd.addEventListener('click', ()=>{
+        todos.splice(index, 1);
+        todoElement.remove();
+        saveTodos(todosDB);
+    });
     const todoFieldDate = document.createElement('div');
     todoFieldDate.classList.add('area-field');
-    todoFieldDate.innerText = new Date().toLocaleString();
+    todoFieldDate.innerText = todoObject.date;
     todoArea.append(todoButtonEnd, todoFieldDate);
     todoElement.append(todoCompleteButton, todoTextElement, todoArea);
     return todoElement;
 }
-bigWrapper.append(wrapperRow);
+let todosFromStorage = localStorage.getItem('todos');
+const todosDB = todosFromStorage ? JSON.parse(todosFromStorage) : [];
+const transformedTodos = todosDB.map(getTodo);
+bigWrapper.append(wrapperRow, ...transformedTodos);
 root.append(bigWrapper);
-const createTodo = ()=>{
+function saveTodos(todos) {
+    localStorage.setItem('todos', JSON.stringify(todos));
+}
+const createTodo = (todos)=>{
     const text = addTodoTextField.value;
-    bigWrapper.append(getTodo(text));
+    const todoObject = {
+        id: Math.floor(Math.random() * 1000) + 1,
+        text: text,
+        date: new Date().toLocaleString(),
+        isChecked: false
+    };
+    let length = todos.push(todoObject);
+    const todo = getTodo(todoObject, length - 1, todos);
+    bigWrapper.append(todo);
     addTodoTextField.value = '';
+    saveTodos(todosDB);
 };
-addTodoButton.addEventListener('click', createTodo);
+addTodoButton.addEventListener('click', ()=>createTodo(todosDB)
+);
 const deleteAll = ()=>{
     const todoItems = document.querySelectorAll('.todo-item');
+    todosDB.splice(0, todosDB.length);
     todoItems.forEach((item)=>item.remove()
     );
+    saveTodos(todosDB);
 };
 deleteAllButton.addEventListener('click', deleteAll);
 

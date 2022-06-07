@@ -1,0 +1,42 @@
+.wrapper {
+    background: grey;
+    height: 250px;
+}
+.wrapper__title {
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 24px;
+    opacity: 0.5;
+}
+.wrapper__tabs {
+    display: flex;
+    gap: 50px;
+    margin-left: 40px;
+    position: relative;
+    width: 80%;
+}
+.wrapper__tabs::after {
+    top: 94%;
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 100%;
+    background-color:white;
+    opacity: 0.5;
+}
+.tabs-link {
+    width: calc(50%/3);
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.tabs-link:hover {
+    color:aqua;
+    border-bottom: 4px solid yellow;
+    cursor: pointer;
+}
+.disabled:hover {
+    color:rgb(61, 61, 61);
+    cursor: not-allowed;
+}
